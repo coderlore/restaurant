@@ -1,8 +1,10 @@
 import loadHome from "./home.js";
+import navbar from "./navbar.js";
 import './style.css';
 
 console.log("I am working");
 
+navbar()
 loadHome()
 /*
 const content = document.querySelector('#content');
