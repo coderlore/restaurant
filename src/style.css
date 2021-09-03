@@ -2,7 +2,6 @@ h1 {
     display: flex;
     font-size: 2.8rem;
     justify-content: center;
-    border: 3px solid blue;
 }
 
 p {
@@ -20,10 +19,21 @@ html {
 }
 
 #content {
-    border: 3px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     height: 450px;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    align-items: center;
 }

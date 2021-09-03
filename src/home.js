@@ -3,7 +3,7 @@ function loadHome() {
     content.id = 'content';
 
     const h1 = document.createElement('h1');
-    h1.innerHTML = 'Come and try our tasty food!';
+    h1.innerHTML = 'Come and try our ono (delicious) food!';
     content.appendChild(h1);
 
     const p = document.createElement('p');
