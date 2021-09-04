@@ -1,11 +1,13 @@
 import loadHome from "./home.js";
 import navbar from "./navbar.js";
+import contact from "./contact.js";
 import './style.css';
 
 console.log("I am working");
 
 navbar()
-loadHome()
+//contact()
+//loadHome()
 /*
 const content = document.querySelector('#content');
 const div = document.createElement('div');
