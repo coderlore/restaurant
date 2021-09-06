@@ -37,3 +37,11 @@ nav {
     background-color: whitesmoke;
     align-items: center;
 }
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}

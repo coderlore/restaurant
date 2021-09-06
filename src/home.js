@@ -3,6 +3,8 @@ function loadHome() {
     content.id = 'content';
 
     const homePage = document.createElement('div');
+    homePage.setAttribute('data-tab-content', 'home')
+    homePage.classList.add('active');
 
     const h1 = document.createElement('h1');
     h1.innerHTML = 'Come and try our ono (delicious) food!';

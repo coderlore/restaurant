@@ -15,6 +15,7 @@ function navbar() {
     homeBtn.textContent = 'Home';
     homeBtn.classList.add('page-nav');
     homeBtn.addEventListener('click', (e) => {
+        setActive(homeBtn);
         loadHome();
     });
 
@@ -25,8 +26,10 @@ function navbar() {
     });
 
     contactBtn.textContent = 'Contact Us';
-    contactBtn.classList.add('page-nave');
+    contactBtn.classList.add('page-nav');
     contactBtn.addEventListener('click', (e) => {
+        if (e.target.classList.contains('active')) return;
+        setActive(contactBtn)
         contact();
     });
 
@@ -37,6 +40,19 @@ function navbar() {
 
     content.appendChild(nav)
     document.body.appendChild(content);
+}
+
+function setActive(button) {
+    const buttons = document.querySelectorAll('.page-nav');
+    const tabContents = document.querySelectorAll('[data-tab-content');
+
+    buttons.forEach((button) => {
+        if (button !== this) {
+            button.classList.remove('active');
+            tabContents.forEach(tabContent => tabContent.classList.remove('active'));
+        };
+    });
+    button.classList.add('active');
 }
 
 export default navbar

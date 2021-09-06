@@ -7,7 +7,7 @@ console.log("I am working");
 
 navbar()
 //contact()
-//loadHome()
+loadHome()
 /*
 const content = document.querySelector('#content');
 const div = document.createElement('div');

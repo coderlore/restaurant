@@ -3,6 +3,8 @@ function contact() {
     content.id = 'content';
 
     const contactPage = document.createElement('div');
+    contactPage.setAttribute('data-tab-content', 'contact')
+    contactPage.classList.add('active');
 
     const contactTitle = document.createElement('h1');
     contactTitle.innerHTML = 'Contact us';
