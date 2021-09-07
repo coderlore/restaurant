@@ -14,6 +14,7 @@ function navbar() {
     
     homeBtn.textContent = 'Home';
     homeBtn.classList.add('page-nav');
+    homeBtn.classList.add('active');
     homeBtn.addEventListener('click', (e) => {
         setActive(homeBtn);
         loadHome();
@@ -44,12 +45,14 @@ function navbar() {
 
 function setActive(button) {
     const buttons = document.querySelectorAll('.page-nav');
-    const tabContents = document.querySelectorAll('[data-tab-content');
+    const tabContents = document.querySelectorAll('[data-tab-content]');
 
     buttons.forEach((button) => {
         if (button !== this) {
             button.classList.remove('active');
-            tabContents.forEach(tabContent => tabContent.classList.remove('active'));
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active')
+            });
         };
     });
     button.classList.add('active');
