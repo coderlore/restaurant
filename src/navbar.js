@@ -1,5 +1,6 @@
 import contact from "./contact.js";
 import loadHome from "./home.js";
+import loadMenu from "./menu.js";
 
 function navbar() {
     const content = document.querySelector('#content');
@@ -23,7 +24,8 @@ function navbar() {
     menuBtn.textContent = 'Menu';
     menuBtn.classList.add('page-nav');
     menuBtn.addEventListener('click', (e) => {
-        alert('Im menu');
+        setActive(menuBtn);
+        loadMenu();
     });
 
     contactBtn.textContent = 'Contact Us';
