@@ -1,3 +1,5 @@
+import locoMocoPic from '../asset/loco.jpeg';
+
 function loadMenu() {
     const content = document.querySelector('#content');
     content.id = 'content';
@@ -11,6 +13,14 @@ function loadMenu() {
     menuPage.appendChild(menuTitle);
 
     const menuItem = document.createElement('div');
+    
+    const foodImage = new Image();
+    foodImage.src = locoMocoPic;
+    foodImage.alt = 'Loco Moco';
+    foodImage.style.height = '100px';
+    foodImage.style.width = '100px';
+    menuPage.appendChild(foodImage);
+
     const foodTitle = document.createElement('h2');
     foodTitle.innerHTML = 'Loco Moco';
     menuPage.appendChild(foodTitle);
@@ -18,11 +28,6 @@ function loadMenu() {
     const foodDescription = document.createElement('p');
     foodDescription.innerHTML = '2 Hamburger patties topped with an egg (prepared how you like it)'
     menuPage.appendChild(foodDescription);
-
-    const foodImage = document.createElement('img');
-    foodImage.src = './asset/loco.jpeg';
-    foodImage.alt = 'LocoMoco';
-    menuPage.appendChild(foodImage);
 
     menuPage.appendChild(menuItem);
     
