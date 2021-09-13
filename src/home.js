@@ -4,7 +4,8 @@ function loadHome() {
 
     const homePage = document.createElement('div');
     homePage.setAttribute('data-tab-content', 'home')
-    homePage.classList.add('active');
+    homePage.classList.add('show');
+    homePage.classList.add('tab-content');
 
     const h1 = document.createElement('h1');
     h1.innerHTML = 'Come and try our ono (delicious) food!';

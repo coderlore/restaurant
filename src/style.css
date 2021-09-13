@@ -63,6 +63,6 @@ button {
     display: none;
 }
 
-.active[data-tab-content] {
+.show[data-tab-content] {
     display: block;
 }

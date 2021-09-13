@@ -2,12 +2,14 @@ import loadHome from "./home.js";
 import navbar from "./navbar.js";
 import contact from "./contact.js";
 import './style.css';
+import loadMenu from "./menu.js";
 
 console.log("I am working");
 
 navbar()
-//contact()
 loadHome()
+loadMenu()
+contact()
 /*
 const content = document.querySelector('#content');
 const div = document.createElement('div');

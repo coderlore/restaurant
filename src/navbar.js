@@ -16,24 +16,24 @@ function navbar() {
     homeBtn.textContent = 'Home';
     homeBtn.classList.add('page-nav');
     homeBtn.classList.add('active');
+    homeBtn.setAttribute('data-for-tab', 'home');
     homeBtn.addEventListener('click', (e) => {
         setActive(homeBtn);
-        loadHome();
     });
 
     menuBtn.textContent = 'Menu';
     menuBtn.classList.add('page-nav');
+    menuBtn.setAttribute('data-for-tab', 'menu');
     menuBtn.addEventListener('click', (e) => {
         setActive(menuBtn);
-        loadMenu();
     });
 
     contactBtn.textContent = 'Contact Us';
     contactBtn.classList.add('page-nav');
+    contactBtn.setAttribute('data-for-tab', 'contact');
     contactBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActive(contactBtn)
-        contact();
     });
 
     nav.appendChild(restaurantName);
@@ -46,18 +46,23 @@ function navbar() {
 }
 
 function setActive(button) {
-    const buttons = document.querySelectorAll('.page-nav');
-    const tabContents = document.querySelectorAll('[data-tab-content]');
+    document.querySelectorAll('.page-nav').forEach(button => {
+        button.addEventListener('click',() => {
+            const sidebar = button.parentElement;
+            const contentDiv = sidebar.parentElement;
+            const tabData = button.dataset.forTab;
+            const tabActivate = contentDiv.querySelector(`.tab-content[data-tab-content="${tabData}"]`)
 
-    buttons.forEach((button) => {
-        if (button !== this) {
-            button.classList.remove('active');
-            tabContents.forEach(tabContent => {
-                tabContent.classList.remove('active')
-            });
-        };
+            sidebar.querySelectorAll('.page-nav').forEach(button => {
+                button.classList.remove('active')
+            })
+            contentDiv.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('show')
+            })
+            button.classList.add('active')
+            tabActivate.classList.add('show')
+        })
     });
-    button.classList.add('active');
 }
 
 export default navbar

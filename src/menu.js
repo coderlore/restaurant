@@ -6,7 +6,7 @@ function loadMenu() {
 
     const menuPage = document.createElement('div');
     menuPage.setAttribute('data-tab-content', 'menu')
-    menuPage.classList.add('active');
+    menuPage.classList.add('tab-content');
 
     const menuTitle = document.createElement('h1');
     menuTitle.innerHTML = 'Menu';
