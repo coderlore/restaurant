@@ -1,12 +1,10 @@
-/*h1 {
-    display: flex;
-    font-size: 2.8rem;
-    justify-content: center;
-    flex: 0 1 50%;
+h1 {
+    font-size: 2rem;
+    padding-top: 20px;
 }
-*/
+
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 body {
@@ -17,6 +15,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*
 #content {
@@ -75,3 +74,19 @@ button {
     justify-content: center;
     border-radius: 5px;
 }*/
+
+#content > [id='home']  {
+    background: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: 60px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#content > [id='contact']  {
+    background: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: 60px auto;
+    border-radius: 5px;
+    text-align: center;
+}

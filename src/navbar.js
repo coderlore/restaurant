@@ -11,7 +11,7 @@ function navbar() {
     const menuBtn = document.createElement('button');
     const contactBtn = document.createElement('button');
     
-    restaurantName.textContent = 'Hawaiian Restaurant';
+    restaurantName.textContent = 'Aloha Poke';
     
     homeBtn.textContent = 'Home';
     homeBtn.classList.add('page-nav');

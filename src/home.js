@@ -26,7 +26,7 @@ function loadHome() {
     homePage.appendChild(chefImage);
 
     const message = document.createElement('p');
-    message.innerHTML = 'Come and visit us!';
+    message.innerHTML = 'Come and visit us today!';
     homePage.appendChild(message);
 
     content.appendChild(homePage)
