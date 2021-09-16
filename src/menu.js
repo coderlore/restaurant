@@ -1,5 +1,3 @@
-import locoMocoPic from '../asset/loco.jpeg';
-
 function loadMenu() {
     const content = document.querySelector('#content');
     content.id = 'content';
@@ -14,13 +12,6 @@ function loadMenu() {
     menuPage.appendChild(menuTitle);
 
     const menuItem = document.createElement('div');
-    
-    /*const foodImage = new Image();
-    foodImage.src = locoMocoPic;
-    foodImage.alt = 'Loco Moco';
-    foodImage.style.height = '150px';
-    foodImage.style.width = '150px';
-    menuPage.appendChild(foodImage);*/
 
     const pokeTitle = document.createElement('h2');
     pokeTitle.classList.add('menu-item');
@@ -71,7 +62,7 @@ function loadMenu() {
     foodDescription.classList.add('menu-item');
     foodDescription.innerHTML = '2 Hamburger patties topped with an egg.'
     menuPage.appendChild(foodDescription);
-    
+
     menuPage.appendChild(menuItem);
     
     content.appendChild(menuPage)
