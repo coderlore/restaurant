@@ -28,7 +28,7 @@ function navbar() {
         setActive(menuBtn);
     });
 
-    contactBtn.textContent = 'Contact Us';
+    contactBtn.textContent = 'Contact';
     contactBtn.classList.add('page-nav');
     contactBtn.setAttribute('data-for-tab', 'contact');
     contactBtn.addEventListener('click', (e) => {

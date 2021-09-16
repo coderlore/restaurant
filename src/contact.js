@@ -26,6 +26,7 @@ function contact() {
     contactPage.appendChild(hours);
 
     const mapImage = new Image();
+    mapImage.id = 'mapImage';
     mapImage.src = mapRestaurant;
     mapImage.alt = 'Location on map';
     mapImage.style.height = '300px';

@@ -15,10 +15,11 @@ function loadHome() {
     homePage.appendChild(h1);
 
     const p = document.createElement('p');
-    p.innerHTML = 'Tasty Hawaiian food at an affordable price';
+    p.innerHTML = 'Tasty poke bowls at an affordable price';
     homePage.appendChild(p);
 
     const chefImage = new Image();
+    chefImage.id = 'chefImage';
     chefImage.src = chef;
     chefImage.alt = 'Chef Sherry';
     chefImage.style.height = '300px';
