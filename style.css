@@ -1,0 +1,112 @@
+h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+body {
+    background: url(/dist/asset/poke-bowl.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    align-items: center;
+    margin: 0;
+
+    padding: 0px 50px;
+}
+
+nav > :nth-child(1) {
+    margin-right: auto;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 40px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 1.25em;
+    display: block;
+    float: right;
+}
+
+.page-nav:hover {
+    background-color: #aaa;
+}
+
+.page-nav.active {
+    background-color: #ccc;
+}
+
+.page-nav {
+    padding: 20px 20px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.show[data-tab-content] {
+    display: block;
+}
+
+#content > [id='home']  {
+    background: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: 60px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#content > [id='menu']  {
+    background: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: 60px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#content > [id='contact']  {
+    background: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: 60px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu-item {
+    text-align: left;
+    margin: 20px 200px;
+}
+
+.menu-item:nth-child(11) {
+    padding-bottom: 20px;
+}
+
+p:last-child {
+    padding-bottom: 20px;
+}
+
+#chefImage {
+    border-radius: 50%;
+}
+
+#mapImage {
+    padding: 20px 0px;
+}
