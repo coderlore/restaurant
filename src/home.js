@@ -1,4 +1,4 @@
-import chef from '../asset/chef.jpeg';
+import chef from '../dist/asset/chef.jpeg';
 
 function loadHome() {  
     const content = document.querySelector('#content');

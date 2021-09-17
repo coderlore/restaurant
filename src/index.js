@@ -1,7 +1,7 @@
 import loadHome from "./home.js";
 import navbar from "./navbar.js";
 import contact from "./contact.js";
-import './style.css';
+import '../dist/style.css';
 import loadMenu from "./menu.js";
 
 console.log("I am working");

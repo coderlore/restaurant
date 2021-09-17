@@ -1,4 +1,4 @@
-import mapRestaurant from '../asset/map.jpeg';
+import mapRestaurant from '../dist/asset/map.jpeg';
 
 function contact() {
     const content = document.querySelector('#content');
